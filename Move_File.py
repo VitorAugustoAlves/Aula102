@@ -14,11 +14,11 @@ for file_name in list_of_files:
 
     if extension == '':
         continue
-    if extension in ['.pdf, .txt, .doc, .docx']:
+    if extension in ['.pdf', '.txt,' '.doc,' '.docx']:
 
         path1 = from_dir + '/' + file_name                              
-        path2 = to_dir + '/' + "Arquivos_Imagem"                      
-        path3 = to_dir + '/' + "Arquivos_Imagem" + '/' + file_name 
+        path2 = to_dir + '/' + "Arquivos_Documentos"                      
+        path3 = to_dir + '/' + "Arquivos_Documentos" + '/' + file_name 
 
         if os.path.exists(path2):
           print("Movendo " + file_name + ".....")
